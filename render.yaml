@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: biblioteca-api
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: AZURE_CLIENT_ID
+        sync: false
+      - key: AZURE_CLIENT_SECRET
+        sync: false
+      - key: AZURE_TENANT_ID
+        sync: false
+      - key: EMAIL_ADDRESS
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+    healthCheckPath: /api/v1/health
+    autoDeploy: true 

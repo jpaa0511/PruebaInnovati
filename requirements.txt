@@ -1,0 +1,41 @@
+# API y servidor web
+fastapi==0.109.2
+uvicorn==0.27.1
+python-multipart==0.0.9
+
+# Base de datos
+sqlalchemy==2.0.27
+psycopg2-binary==2.9.9
+
+# Configuración y validación
+pydantic==2.6.1
+pydantic-settings==2.1.0
+python-dotenv==1.0.1
+email-validator==2.1.0.post1
+
+# LangChain y OpenAI
+langchain==0.1.0
+langchain-core>=0.1.7,<0.2.0
+langchain-openai==0.0.2
+openai==1.12.0
+
+# Microsoft Graph API
+msgraph-core==0.2.2
+azure-identity==1.15.0
+msal==1.25.0
+
+# Seguridad
+python-jose[cryptography]==3.3.0
+passlib==1.7.4
+bcrypt==4.0.1
+
+# Testing
+pytest==7.4.3
+httpx==0.25.2
+
+# Programación de tareas
+schedule==1.2.1
+
+# Procesamiento de HTML
+beautifulsoup4==4.12.3
+
